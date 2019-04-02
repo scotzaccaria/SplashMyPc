@@ -6,9 +6,7 @@ Leggere il file `index.html` e sviluppare le parti indicate.
 
 1. Scaricare il progetto
 Per sviluppare il tutto bisogna che tu faccia un `FORK` del progetto dal tuo account github. Per farlo basta che in questa repository in alto a destra prema sul tasto `Fork`. Automaticamente creerà nel tuo account github lo stesso progetto ma con la differenza che questo lo puoi modificare.
-
 Di seguito, nel tuo account, scarichi il progetto con il comando:
-
 ```
 $ git clone https://github.com/${TUO USERNAME}/SplashMyPc.git
 ```
