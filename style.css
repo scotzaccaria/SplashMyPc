@@ -1,3 +1,4 @@
-.text-white{
-    color:white;
+.bg-img-icon{
+    background-image: url("icon.png");
+    background-size: cover;
 }
