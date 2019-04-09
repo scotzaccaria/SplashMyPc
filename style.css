@@ -10,17 +10,31 @@
     text-align: center;
   }
 
-.title{
+.centered{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Marker Felt, fantasy;
-    font-size: 36px;
-    font-weight: bold;
 }
 .top-right {
     position: absolute;
     top: 8px;
-    right: 25px;
+    right: 45px;
   }
+.title{
+    font-family: Marker Felt, fantasy;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+}
+.icon{
+    height: 72px;
+    width: 72px;
+    display: inline-block;
+    border: 1px,black,solid;
+    z-index: 5;
+}
+.bordo{
+    border:3px solid black;
+    padding: 5px;
+}
