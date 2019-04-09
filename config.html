@@ -3,50 +3,86 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-    <!-- Material Design for Bootstrap fonts and icons -->
+    
+    <!--Material Design for Bootstrap fonts and icons--> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <!-- Material Design for Bootstrap CSS -->
+    <!--Material Design for Bootstrap CSS--> 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
     <title>Splash My PC</title>
   </head>
   <body>
-        <header>
-          <div class="row">
-            <div class="col"><img class="img-responsive" src="icon-left-font.png" alt="logo" height="200px" width="100%"></div>
-            <div class="col-12">
-              <div class="row bg-secondary">
-                <div class="col-4 col-sm-3"><p class="text-center"><a href="index.html" class="text-white btn" role="button">Home</a></p></div>
-                <div class="col-4 col-sm-3"><p class="text-center"><a href="config.html" class="text-white btn" role="button">Configurazioni</a></p></div>
-                <div class="col-4 col-sm-3"><p class="text-center"><a href="periferiche.html" class="text-white btn" role="button">Periferiche</a></p></div>
-                <div class="col-4 col-sm-3"><p class="text-center"><a href="#contatti" class="text-white btn" role="button">Contatti</a></p></div>
+    <!--
+    TODO: Lascia qua questo commento
+    Prendere di esempio il sito https://blinkmypc.it/ e sviluppare un'alternativa che abbia le stesse funzionalità 
+    ma che abbia un'aspetto più "fresh", usando ad esempio uno stile material design.
+    -->
+
+    <header>
+      <!--riga-->
+      <div class="row">
+        <div class="col-12 image">
+            <img class="img-responsive" src="color-banner.png" alt="logo" height="200px" width="100%">
+            <div class="title">SplashMyPc</div>
+        </div>
+        <!--colonna-->
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+              <span class="navbar-brand">SplashMyPc</span>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav textb">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="config.html">Configurazioni</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="periferiche.html">Periferiche</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#contatti">Contatti</a>
+                  </li>
+                </ul>
               </div>
+            </nav>
+        </div>
+        <!--colonna-->
+      </div>
+      <!--riga-->
+    </header>
+
+    <main>
+      <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</h2>
+    </main>
+
+    <footer id="contatti">
+      <div class="row ">
+          <div class="col-12 image contact">
+            <img class="img-responsive" src="color-banner.png" alt="logo" height="150px" width="100%">
+            <div class="top-right">
+              <h6 class="text-uppercase font-weight-bold text-black" style="font-family: Marker Felt, fantasy;">contatti</h6>
+              <hr style="margin-top: 0.5em;">
+              <p> New York, NY 10012, US</p>
+              <p> info@example.com</p>
+              <p> + 01 234 567 88</p>
+              <p> + 01 234 567 89</p>
             </div>
           </div>
-      </header>
-      <main>
+      </div>
+    </footer>
 
-      </main>
-      <footer>
-        <div class="row mt-3 justify-content-end bg-img-icon">
-          <div class="mr-5 contact">
-            <h6 class="text-uppercase font-weight-bold">contact</h6>
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-          </div>
-          <div></div>
-        </div>
-      </footer>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-      <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <!--Optional JavaScript-->
+    <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
   </body>
 </html>

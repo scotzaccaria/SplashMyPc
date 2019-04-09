@@ -1,10 +1,26 @@
-.bg-img-icon{
-    background-image: url("icon.png");
-    background-size: cover;
-}
-
 .contact p{
     line-height: 0.5;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-align: start;
+}
+.image {
+    position: relative;
+    text-align: center;
+  }
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Marker Felt, fantasy;
+    font-size: 36px;
     font-weight: bold;
 }
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+  }
