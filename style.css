@@ -2,3 +2,9 @@
     background-image: url("icon.png");
     background-size: cover;
 }
+
+.contact p{
+    line-height: 0.5;
+    font-size: 12px;
+    font-weight: bold;
+}
