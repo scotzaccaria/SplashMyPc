@@ -21,6 +21,12 @@
     top: 8px;
     right: 45px;
   }
+  .bottom-left{
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+
+  }
 .title{
     font-family: Marker Felt, fantasy;
     font-size: 48px;
@@ -31,7 +37,6 @@
     height: 96px;
     width: 96px;
     display: inline-block;
-    border: 1px,black,solid;
     z-index: 5;
 }
 .bordo{
@@ -56,9 +61,6 @@
     border: 3px solid #ff4444;
     background-image: url("titoletto.jfif");
 }
-.asd{
-    background-image: url('titoletto.jfif');
-}
 .description{
     text-align: start;
     font-weight: bold;
@@ -66,4 +68,9 @@
 .barra{
     background-color: antiquewhite;
     padding: 0;
+}
+.bottom-left .shareb{
+    border: 1px rgba(0, 0, 0, 0.404) solid;
+    padding: 0;
+    margin: 4px;
 }
