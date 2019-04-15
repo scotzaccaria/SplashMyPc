@@ -21,19 +21,6 @@
     Prendere di esempio il sito https://blinkmypc.it/ e sviluppare un'alternativa che abbia le stesse funzionalità 
     ma che abbia un'aspetto più "fresh", usando ad esempio uno stile material design.
     -->
-    <style>
-        /* Style the input field */
-        #myInput {
-          padding: 20px;
-          margin-top: -6px;
-          border: 0;
-          border-radius: 0;
-          background: #f1f1f1;
-        }
-        .dropdown a{
-          color: gray;
-        }
-        </style>
 
     <header>
       <!--riga inizio-->
@@ -80,19 +67,66 @@
 
     <main class="main-bg-icon">
       <div class="container spz-container">
+        <form method="GET">
+          <div class="row">
+              <div class="col-12 col-md-6 bordo-t">
+                <label for="ram" class="text-danger" style="font-size: 18px; font-weight: bold;" >Select your CPU</label>
+                <select class="browser-default custom-select custom-select-lg mb-3" id="cpu" name="cpu">
+                  <option selected>-- --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6 bordo-t">
+                <label for="ram" class="text-danger" style="font-size: 18px; font-weight: bold;" >Select your MOBO</label>
+                <select class="browser-default custom-select custom-select-lg mb-3" id="mobo" name="mobo">
+                  <option selected>-- --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6 bordo-t">
+                <label for="ram" class="text-danger" style="font-size: 18px; font-weight: bold;" >Select your RAM</label>
+                <select class="browser-default custom-select custom-select-lg mb-3" id="ram" name="ram">
+                  <option selected>-- --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>   
+              </div>
+              <div class="col-12 col-md-6 bordo-t">
+                <label for="gpu" class="text-danger" style="font-size: 18px; font-weight: bold;" >Select your GPU</label>
+                <select class="browser-default custom-select custom-select-lg mb-3" id="gpu" name="gpu">
+                  <option selected>-- --</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-12 bordo-t text-center">
+                  <button type="submit" class="btn btn-outline-danger" style="margin:10px;">Submit</button>
+              </div>
+          </div>
+        </form>
         <div class="row">
-            <div class="col-12 col-md-6 bordo-t">
-              <!--dropdown-->
-            </div>
-            <div class="col-12 col-md-6 bordo-t">
-              <!--dropdown-->
-            </div>
-            <div class="col-12 col-md-6 bordo-t">
-              <!--dropdown-->   
-            </div>
-            <div class="col-12 col-md-6 bordo-t">
-              <!--dropdown-->
-            </div>
+          <div class="col">
+            <p>
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+              exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -133,15 +167,5 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-    <script>
-        $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $(".dropdown-menu li").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-          });
-        });
-        </script>
   </body>
 </html>
