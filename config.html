@@ -21,6 +21,19 @@
     Prendere di esempio il sito https://blinkmypc.it/ e sviluppare un'alternativa che abbia le stesse funzionalità 
     ma che abbia un'aspetto più "fresh", usando ad esempio uno stile material design.
     -->
+    <style>
+        /* Style the input field */
+        #myInput {
+          padding: 20px;
+          margin-top: -6px;
+          border: 0;
+          border-radius: 0;
+          background: #f1f1f1;
+        }
+        .dropdown a{
+          color: gray;
+        }
+        </style>
 
     <header>
       <!--riga inizio-->
@@ -65,6 +78,24 @@
       <!--riga fine-->
     </header>
 
+    <main class="main-bg-icon">
+      <div class="container spz-container">
+        <div class="row">
+            <div class="col-12 col-md-6 bordo-t">
+              <!--dropdown-->
+            </div>
+            <div class="col-12 col-md-6 bordo-t">
+              <!--dropdown-->
+            </div>
+            <div class="col-12 col-md-6 bordo-t">
+              <!--dropdown-->   
+            </div>
+            <div class="col-12 col-md-6 bordo-t">
+              <!--dropdown-->
+            </div>
+        </div>
+      </div>
+    </main>
 
 
     <footer id="contatti">
@@ -102,5 +133,15 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $(".dropdown-menu li").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
   </body>
 </html>
