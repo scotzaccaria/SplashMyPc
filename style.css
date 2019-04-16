@@ -5,6 +5,11 @@
     color: black;
     text-align: start;
 }
+.image {
+    position: relative;
+    text-align: center;
+  }
+
 .centered{
     position: absolute;
     top: 50%;
@@ -58,7 +63,7 @@
 .description{
     text-align: start;
     font-weight: bold;
-        width: 150px;
+        width: 100%;
         
 }
 .barra{
