@@ -5,20 +5,15 @@
     color: black;
     text-align: start;
 }
-.image {
-    position: relative;
-    text-align: center;
-  }
-
 .centered{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.top-right {
+.bottom-right {
     position: absolute;
-    top: 8px;
+    bottom: 8px;
     right: 45px;
   }
   .bottom-left{
