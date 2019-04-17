@@ -78,3 +78,6 @@
 .sf,.bordo-t,.bordo{
     background-image: url("titoletto.jfif");
 }
+.bottom-right p{
+    line-height: 0.6em;
+}
